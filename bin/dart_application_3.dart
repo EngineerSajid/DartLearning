@@ -35,13 +35,15 @@ void main(List<String> arguments) {
   }
 
   // While loop
-  int test = 1;
-  while (test <= 3) {
-    print('Hello, While Loop');
+  List<int> numbers = [14, 23, 34, 4, 5, 64, 7, 83, 9, 10];
+  int test = 0;
+  while (test < numbers.length) {
+    print(numbers[test]);
     test++;
   }
 
   // Do While Loop
+
   int test1 = 1;
   do {
     print('Do While Loop');
@@ -56,7 +58,7 @@ void main(List<String> arguments) {
   } while (test2 <= 3);
 
   // input taking
-  for (int j = 1; j <= 3; j++) {
+  for (int j = 0; j <= 3; j++) {
     print("Enter number ${j + 1}");
     String value = stdin.readLineSync()!;
 
@@ -64,7 +66,13 @@ void main(List<String> arguments) {
       print('Opps! You entered negative number');
       return;
     } else {
-      print('you entered positive numnber $value');
+      print('you entered ${value.toString()}');
     }
+  }
+
+  // for in loop
+  List<int> number = [21, 4, 2, 4, 5, 65, 43];
+  for (int i in number) {
+    print(i);
   }
 }
