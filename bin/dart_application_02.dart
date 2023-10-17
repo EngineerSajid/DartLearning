@@ -2,15 +2,15 @@ void main() {
   // map and enumaration
 
   // Map
-  Map map = {'Name' : 'Sajid', 'Age' : 20};
+  Map map = {'Name': 'Sajid', 'Age': 20};
   print(map);
-  Map <String, dynamic> map1 = {'Name' : 'Sultan', 'Age' : 30};
+  Map<String, dynamic> map1 = {'Name': 'Sultan', 'Age': 30};
   print(map1);
 
-  Map <String, dynamic> map2 = {'Name' : 'Sajid', 'Age' : 20, 'Gender' : 'Male'};
+  Map<String, dynamic> map2 = {'Name': 'Sajid', 'Age': 20, 'Gender': 'Male'};
   print(map2);
   print(map2['Gender'].toString() + ' ' + map['Name']);
-  // adding key and values in the map 
+  // adding key and values in the map
   map['city'] = 'Dhaka';
   map['Marital Status'] = 'Single';
   print(map);
@@ -20,7 +20,7 @@ void main() {
   // printing map keys and values
   print(map.keys);
   print(map.values);
-  // update map key values 
+  // update map key values
   map.update('Name', (updateValue) => 'Sultan');
   map.update('Age', (updateValue) => 30);
   print(map);
@@ -32,69 +32,67 @@ void main() {
   // ForEach loop in Map
   map.forEach((key, value) {
     print('$key : $value');
-    
   });
 
   map.removeWhere((key, value) => value == 'Sultan');
   map.addAll({'planets': 'earth', '2planets': 'jupiter'});
   print(map);
 
-  Map <dynamic, dynamic> anotherMap = {'Name' : ['Sajid', 'Sultan'], 'Age' : 20, 'Gender' : 'Male'} ;
+  Map<dynamic, dynamic> anotherMap = {
+    'Name': ['Sajid', 'Sultan'],
+    'Age': 20,
+    'Gender': 'Male'
+  };
   print(anotherMap);
-  
-  // enum for color checking 
+
+  // enum for color checking
   Color color = Color.red;
-  switch(color){
+  switch (color) {
     case Color.red:
-    print("This is red color");
-    break;
+      print("This is red color");
+      break;
     case Color.green:
-    print("This is green color");
-    break;
+      print("This is green color");
+      break;
     case Color.blue:
-    print("This is blue color");
-    break;
+      print("This is blue color");
+      break;
     case Color.orange:
-    print("This is orange color");
-    break;
+      print("This is orange color");
+      break;
     default:
-    print("No matching element");
-    
+      print("No matching element");
   }
 
   // enum for day checking through by using switch case
   Day day = Day.Saturday;
-  switch(day){
+  switch (day) {
     case Day.Friday:
-    print('Friday');
-    break;
+      print('Friday');
+      break;
     case Day.Saturday:
-    print('Saturday');
-    break;
+      print('Saturday');
+      break;
     case Day.Sunday:
-    print('Sunday');
-    break;
+      print('Sunday');
+      break;
     case Day.Monday:
-    print('Monday');
-    break;
+      print('Monday');
+      break;
     case Day.Tuesday:
-    print('Tuesday');
-    break;
+      print('Tuesday');
+      break;
     case Day.Wednesday:
-    print('Wednesday');
-    break;
+      print('Wednesday');
+      break;
     case Day.Thursday:
-    print('Thursday');
+      print('Thursday');
     default:
-    print('No matching element');
-    break;
+      print('No matching element');
+      break;
   }
-  
 }
 
-enum Color{
-  red, green, blue, orange
-}
-enum Day{
-  Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday
-}
+enum Color { red, green, blue, orange }
+
+enum Day { Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday }

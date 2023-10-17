@@ -1,7 +1,6 @@
 import 'dart:ffi';
 
 void main(List<String> arguments) {
-  /*
   // String
   String course = "Flutter Apps Development";
   String learner = "Sajedur Rahman Sajid";
@@ -27,7 +26,8 @@ void main(List<String> arguments) {
 
   // Var and Dynamic Keyword Basic Concept
   var sajid = "Sajid";
-  print(sajid); // if we use var keyword we can override the variable with the another data type.for instance, we can override a variable with the same data type.
+  print(
+      sajid); // if we use var keyword we can override the variable with the another data type.for instance, we can override a variable with the same data type.
 
   // Dynamic keyword
   dynamic Sajid = "Sajid";
@@ -40,11 +40,10 @@ void main(List<String> arguments) {
   print(data[2]);
 
   //List in specific type "int" if we set the type in specific format so we can take another type value in the list. Here we are just able put integer type data.
-  List <int> Another = [1, 2, 3, "sajid", "rubel", true, 23.5, 25.5];
+  List<dynamic> Another = [1, 2, 3, "sajid", "rubel", true, 23.5, 25.5];
   print(Another.length);
   print(Another[3]);
-   
-*/
+
   // List in type dynamic
   List<dynamic> list = [12, 13, 14, "sajid", "sultan", 75.5, true, false];
   list.add(10); // add in the last
@@ -65,42 +64,6 @@ void main(List<String> arguments) {
   print(nestedList[1][1]);
   print(nestedList[2][0]);
   print(nestedList[3][0]);
-
-  // First Assignment
-  //Question-1:
-  String Name = "Sajid";
-  double Age = 24.5;
-  double Salary = 25000;
-  print(Name);
-  print(Age);
-  print(Salary);
-  // Override
-  Name = "Sultan";
-  Age = 26.5;
-  Salary = 50000;
-  print(Name);
-  print(Age);
-  print(Salary);
-
-  //Question-2:
-  int a = 12, b = 24, c = 39;
-  double DesireOutput = (a + b) / c;
-  print(DesireOutput.toStringAsFixed(3));
-
-  //Question-03
-  List<List<List>> anotherNestedList = [
-    [
-      ["Sakib", 30],
-      ["Rakib", 40]
-    ],
-    [
-      ["Namul", 30],
-      ["Nipa", 24],
-      ["Sajib", 70]
-    ]
-  ];
-  print(anotherNestedList[1][1][0]);
-  print(anotherNestedList[0][1][1]);
 
   // Nested List Another Practice
   List<List<dynamic>> multipleList = [
